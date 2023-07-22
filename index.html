@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Random MAC Address Generator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Random MAC Address Generator</h1>
+            <label for="macPrefix">MAC Address Prefix:</label>
+            <input type="text" id="macPrefix">
+            
+            <label for="macFormat">MAC Address Format:</label>
+            <select id="macFormat">
+                <option value="colon">Colon-separated (00:1A:2B:3C:4D:5E)</option>
+                <option value="hyphen">Hyphen-separated (00-1A-2B-3C-4D-5E)</option>
+                <option value="dot">Dot-separated (00.1A.2B.3C.4D.5E)</option>
+            </select>
+            
+            <label for="macCase">Case:</label>
+            <select id="macCase">
+                <option value="uppercase">Uppercase</option>
+                <option value="lowercase">Lowercase</option>
+            </select>
+
+            <button id="generateButton">Generate MAC Address</button>
+            <div id="result"></div>
+            <button id="copyButton" onclick="copyToClipboard()">Copy</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('./rand-MAC_bg.png'); /* Replace 'path/to/your/background-image.jpg' with the actual path to your image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* You can add more styling here, such as background color, text styles, etc. */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    max-width: 400px;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(237, 135, 135, 0.84);
+    border-radius: 10px;
+}
+
+h1 {
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#result {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+/* Media Queries for Mobile Responsive Layout */
+@media only screen and (max-width: 600px) {
+    .card {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    input, select, button {
+        width: 100%;
+        margin-right: 0;
+    }
+}
