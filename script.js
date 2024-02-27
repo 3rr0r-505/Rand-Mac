@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
         resultDiv.innerText = generatedMacAddress;
 
         // Enable the "Copy" button after generating the MAC address
-        copyButton.disabled = false;
+        copyButton.style.display = 'inline-block';
     });
 
     function generateRandomMacAddress(prefix, format, casing) {
@@ -47,10 +47,11 @@ document.addEventListener('DOMContentLoaded', function() {
         document.execCommand('copy');
         document.body.removeChild(tempTextArea);
 
-        // Change the "Copy" button text temporarily to indicate success
-        copyButton.innerText = 'Copied!';
+        const popup = document.getElementById('popup');
+        popup.style.display = 'block';
+
         setTimeout(function() {
-            copyButton.innerText = 'Copy';
+            popup.style.display = 'none';
         }, 2000);
     }
 
